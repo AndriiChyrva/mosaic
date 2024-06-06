@@ -3,14 +3,14 @@ run-name: ${{ github.actor }} creates an issue ${{ github.event.issue.title }}
 on:
   issues:
     types: [opened]
-  jobs:
-    echo-issues-data:
-      name: "Echo issues data"
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo Echo Section
-        - run: |
-              echo "Issue id: ${{ github.event.issue.id }}"
-              echo "Issue number: ${{ github.event.issue.number }}"
-              echo "Issue title: ${{ github.event.issue.title }}"
-              echo "Issue body: ${{ github.event.issue.body }}"
+    jobs:
+      echo-issues-data:
+        name: "Echo issues data"
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo Echo Section
+          - run: |
+                echo "Issue id: ${{ github.event.issue.id }}"
+                echo "Issue number: ${{ github.event.issue.number }}"
+                echo "Issue title: ${{ github.event.issue.title }}"
+                echo "Issue body: ${{ github.event.issue.body }}"
