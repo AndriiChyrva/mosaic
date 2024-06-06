@@ -1,0 +1,16 @@
+
+About CD:
+    https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment
+
+Configuring advanced setup for code scanning:
+    https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/configuring-advanced-setup-for-code-scanning#configuring-code-scanning-using-third-party-actions
+
+About CI:
+    https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration
+
+Creating starter workflows for your organization:
+    https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization
+
+
+echo "Issue title: ${{ github.event.issue.title }}"
+echo "Issue body: ${{ github.event.issue.body }}"
